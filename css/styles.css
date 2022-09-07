@@ -1064,7 +1064,7 @@ body {
 .policy-checkbox:checked ~ .policy-icon-square {
   opacity: 0;
   fill: var(--accent-dodger-blue);
-  transition: fill var(--timing-function), background-color var(--timing-function);
+  transition: fill var(--timing-function);
 }
 
 .policy-icon-check {
@@ -1080,7 +1080,7 @@ body {
 .policy-checkbox:checked ~ .policy-icon-check {
   opacity: 1;
   fill: var(--accent-dodger-blue);
-  transition: opacity var(--timing-function);
+  transition: fill var(--timing-function);
 }
 
 /* when we use span and bg-image--
