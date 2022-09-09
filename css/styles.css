@@ -227,7 +227,7 @@ body {
 .link-current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   content: '';
   display: block;
@@ -651,7 +651,6 @@ body {
 }
 
 /* Where is focus in figma???????
-
 .signup__slogan-email:focus {
 
 } */
@@ -666,14 +665,12 @@ body {
   padding: 10px 28px;
 }
 
-.signup-link {
+.signup-icon {
   position: absolute;
   right: 28px;
   display: inline-flex;
   margin-left: 10px;
-}
 
-.signup-icon {
   fill: var(--white-color);
 }
 
@@ -831,6 +828,7 @@ body {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
