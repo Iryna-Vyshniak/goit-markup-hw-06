@@ -842,7 +842,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  z-index: 3;
   width: 528px;
   min-height: 581px;
 
@@ -853,8 +852,8 @@ body {
   opacity: 1;
   transition: transform var(--timing-function), opacity var(--timing-function);
 }
-/* 
-.modal::after {
+
+/* .modal::after {
   position: absolute;
   content: '';
   top: 0;
@@ -866,21 +865,22 @@ body {
   opacity: 0;
 }
 
-.modal:hover::after {
+.modal:hover::after,
+.modal:focus::after {
   z-index: -1;
   transform: scale(1.1) translateZ(10deg);
   filter: blur(55px);
   background: linear-gradient(
     to left,
-    #358fdf,
-    #415ef2,
-    #2747c7,
-    #2416c3,
-    #6501de,
-    #34038f,
-    #2747c7,
-    #415ef2,
-    #358fdf
+    #2196f3,
+    #321dee,
+    #664eef,
+    #c5b7f6,
+    #a596f4,
+    #c5b7f6,
+    #664eef,
+    #321dee,
+    #2196f3
   );
   background-size: 200% 200%;
   animation: animateGlow 2000ms linear infinite;
