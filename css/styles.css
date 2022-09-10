@@ -63,12 +63,11 @@
 
 body {
   height: 100vh;
-  /* padding-top: var(--header-height); */
   margin: 0;
 
   font-family: 'Roboto', sans-serif;
-  font-weight: var(--primary-weight); /* 400 */
-  font-size: var(--primary-font-size); /* 16px */
+  font-weight: var(--primary-weight);
+  font-size: var(--primary-font-size);
   line-height: 1.7;
   letter-spacing: 0.03em;
 
@@ -85,10 +84,6 @@ body {
 .page-main {
   flex: 1 1 auto;
 }
-
-/* :focus {
-  outline: 2px solid rgb(0, 0, 255);
-} */
 
 .list {
   margin: 0;
@@ -131,11 +126,6 @@ body {
 /* ========================= HEADER =========================================== */
 
 .page-header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10; */
-
   max-width: 100%;
   min-height: var(--header-height);
 
@@ -190,10 +180,6 @@ body {
   align-items: center;
   margin-left: auto;
 }
-
-/* .site-contacts > .item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .site-contacts > .item + .item {
   margin-left: 50px;
@@ -313,7 +299,6 @@ body {
   cursor: pointer;
 }
 
-/* same styles for buttons in hero & footer */
 .main-button {
   min-width: 216px;
   padding: 10px 32px;
@@ -395,13 +380,6 @@ body {
   border-radius: 4px;
 }
 
-/* 
-.section-set .set-item:not(:last-child) {
-  margin-right: 30px;
-} 
-*/
-
-/* the same styles for advantages set-item & footer slogan */
 .subtitle {
   margin-top: 0;
   font-weight: var(--primary-bold);
@@ -650,11 +628,6 @@ body {
   line-height: 1.2;
 }
 
-/* Where is focus in figma???????
-.signup__slogan-email:focus {
-
-} */
-
 .signup-button {
   position: relative;
   display: flex;
@@ -853,53 +826,6 @@ body {
   transition: transform var(--timing-function), opacity var(--timing-function);
 }
 
-/* .modal::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-}
-
-.modal:hover::after,
-.modal:focus::after {
-  z-index: -1;
-  transform: scale(1.1) translateZ(10deg);
-  filter: blur(55px);
-  background: linear-gradient(
-    to left,
-    #2196f3,
-    #321dee,
-    #664eef,
-    #c5b7f6,
-    #a596f4,
-    #c5b7f6,
-    #664eef,
-    #321dee,
-    #2196f3
-  );
-  background-size: 200% 200%;
-  animation: animateGlow 2000ms linear infinite;
-
-  opacity: 1;
-}
-
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
-} */
-
 .btn-modal-close {
   position: absolute;
   top: 8px;
@@ -920,8 +846,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* display: block;
-  margin: 0 auto; */
   width: 18px;
   height: 18px;
 }
@@ -976,10 +900,6 @@ body {
 }
 
 .form-label {
-  /* position: absolute;
-  top: 100%;
-  left: 30px;
-  transform: translateY(-50%); */
   margin-bottom: 4px;
   transition: color var(--timing-function);
 }
@@ -1079,38 +999,6 @@ body {
   transition: opacity var(--timing-function);
 }
 
-/* when we use span and bg-image--
-
-.form-icon-checkbox {
-  display: block;
-  margin-left: 13px;
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-
-  border: 1.8px solid var(--primary-text-color);
-  border-radius: 2px;
-} 
-
-.form-policy-checkbox:checked + .form-icon-checkbox {
-  border-color: var(--accent-dodger-blue);
-  background-color: var(--accent-dodger-blue);
-  background-image: url(../images/background/white-check.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-origin: border-box;
-
-  transition: border-color var(--timing-function), background-color var(--timing-function),
-    background-image var(--timing-function);
-}*/
-
-/* 
-.form-policy-checkbox:checked ~ .label{
-  transform: translateX(20px);
-  transition: transform var(--timing-function);
-} */
-
 .policy-link {
   position: relative;
   display: inline-flex;
@@ -1118,17 +1006,6 @@ body {
   color: var(--accent-dodger-blue);
   text-decoration: underline;
 }
-
-/* thing string under the text
- .form-link:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  color: var(--accent-dodger-blue);
-} */
 
 .form-button {
   margin-top: 0;
@@ -1144,3 +1021,50 @@ body {
   background-color: var(--hero-btn-active);
   box-shadow: var(--hero-btn-shadow);
 }
+
+/* .modal::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.modal:hover::after,
+.modal:focus::after {
+  z-index: -1;
+  transform: scale(1.1) translateZ(10deg);
+  filter: blur(55px);
+  background: linear-gradient(
+    to left,
+    #2196f3,
+    #321dee,
+    #664eef,
+    #c5b7f6,
+    #a596f4,
+    #c5b7f6,
+    #664eef,
+    #321dee,
+    #2196f3
+  );
+  background-size: 200% 200%;
+  animation: animateGlow 2000ms linear infinite;
+
+  opacity: 1;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+} */
