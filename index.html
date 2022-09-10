@@ -643,21 +643,24 @@
           </div>
           <!-- Підпишіться на розсилку -->
           <div class="centered footer-signup">
-            <h3 class="subtitle slogan">Підпишіться на розсилку</h3>
-            <div class="signup" role="group">
-              <input
-                class="signup-slogan slogan-email"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
+            <p class="subtitle slogan">Підпишіться на розсилку</p>
+            <form action="javascript:void(0);" class="footer-signup__form" autocomplete="off">
+              <label class="footer-signup__subscription" for="footer-signup__subscription">
+                <input
+                  id="footer-signup__subscription"
+                  class="signup-slogan footer-signup__email"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
               <button class="button signup-button main-button" type="button">
                 Підписатися
                 <svg class="signup-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-telegram-white"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </footer>
@@ -718,15 +721,11 @@
           </div>
           <label class="policy-label">
             <input class="policy-checkbox" type="checkbox" name="policy" />
-            <!-- <span class="form-icon-checkbox"></span> -->
             Погоджуюся з розсилкою та приймаю
             <a href="#" class="policy-link link"> Умови договору</a>
             <svg class="policy-icon policy-icon-square" width="16" height="15">
               <use href="./images/icons.svg#icon-black-square"></use>
             </svg>
-            <!-- <svg class="policy-icon policy-icon-check" width="16" height="15">
-              <use href="./images/icons.svg#icon-white-check"></use>
-            </svg> -->
             <svg class="policy-icon policy-icon-check" width="16" height="15">
               <use href="./images/icons.svg#icon-blue-white-check"></use>
             </svg>

@@ -410,22 +410,24 @@
           </div>
           <!-- Підпишіться на розсилку -->
           <div class="centered footer-signup">
-            <h3 class="subtitle slogan">Підпишіться на розсилку</h3>
-            <div class="signup" role="group">
-              <input
-                class="signup-slogan slogan-email"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
+            <p class="subtitle slogan">Підпишіться на розсилку</p>
+            <form action="javascript:void(0);" class="footer-signup__form" autocomplete="off">
+              <label class="footer-signup__subscription" for="footer-signup__subscription">
+                <input
+                  id="footer-signup__subscription"
+                  class="signup-slogan footer-signup__email"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
               <button class="button signup-button main-button" type="button">
                 Підписатися
-                  <svg class="signup-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-telegram-white"></use>
-                  </svg>
+                <svg class="signup-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telegram-white"></use>
+                </svg>
               </button>
-              </button>
-            </div>
+            </form>
           </div>
         </div>
       </footer>

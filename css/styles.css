@@ -619,17 +619,17 @@ body {
   margin-left: auto;
 }
 
-.signup {
+.footer-signup__subscription {
+  margin-right: 12px;
+}
+
+.footer-signup__form {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.signup-slogan:not(:last-child) {
-  margin-right: 12px;
-}
-
-.slogan-email {
+.footer-signup__email {
   min-width: 358px;
   margin-top: 0;
   margin-bottom: 0;
@@ -1061,8 +1061,7 @@ body {
 
 .policy-checkbox:checked ~ .policy-icon-square {
   opacity: 0;
-  fill: var(--accent-dodger-blue);
-  transition: fill var(--timing-function);
+  transition: opacity var(--timing-function);
 }
 
 .policy-icon-check {
@@ -1077,8 +1076,7 @@ body {
 
 .policy-checkbox:checked ~ .policy-icon-check {
   opacity: 1;
-  fill: var(--accent-dodger-blue);
-  transition: fill var(--timing-function);
+  transition: opacity var(--timing-function);
 }
 
 /* when we use span and bg-image--
